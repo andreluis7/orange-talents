@@ -19,21 +19,21 @@ public class ClienteDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@NotBlank(message = " {campo.nome.obrigatorio}")
+	@NotBlank(message = "O Nome do Cliente é obrigatório.")
 	private String nome;
 
-	@NotBlank(message = "{campo.cpf.obrigatorio}")
-	@CPF(message = "{campo.cpf.invalido}")
-	@ValorUnico(domainClass = Cliente.class, fieldName = "cpf", message = "{campo.cpf.repetido}")
+	@NotBlank(message = "O CPF do Cliente é obrigatório.")
+	@CPF(message = "Por favor digite um CPF válido.")
+	@ValorUnico(domainClass = Cliente.class, fieldName = "cpf", message = "Já existe um cadastro de cliente com esse CPF.")
 	private String cpf;
 
-	@NotBlank(message = "{campo.email.obrigatorio}")
-	@Email(message = "{campo.email.invalido}")
-	@ValorUnico(domainClass = Cliente.class, fieldName = "email", message = "{campo.email.repetido}")
+	@NotBlank(message = "O Email do Cliente é obrigatório.")
+	@Email(message = "Por favor digite um Email válido.")
+	@ValorUnico(domainClass = Cliente.class, fieldName = "email", message = "Já existe um cadastro de cliente com esse Email.")
 	private String email;
 
-	@NotNull(message = "{campo.data-nascimento.obrigatorio}")
-	@Past(message = "{campo.data-nascimento.invalida}")
+	@NotNull(message = "Por favor digite uma data de nascimento.")
+	@Past(message = "Por favor informe um data válida.")
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
 	private LocalDate dataDeNascimento;
 
