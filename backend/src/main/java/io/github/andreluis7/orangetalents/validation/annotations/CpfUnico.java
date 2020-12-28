@@ -13,7 +13,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface CpfUnico {
 
-    String message() default "{io.github.monthalcantara.nossobancodigital.validation.annotations.UnicoCPF}";
+    String message() default "CPF já consta cadastrado no sistema";
     Class<?>[] groups() default { };
     Class<? extends Payload>[] payload() default { };
 }

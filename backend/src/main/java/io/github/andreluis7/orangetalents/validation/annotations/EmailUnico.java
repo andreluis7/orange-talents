@@ -17,7 +17,7 @@ import io.github.andreluis7.orangetalents.validation.validators.UnicoEmailValida
 @Retention(RetentionPolicy.RUNTIME)
 public @interface EmailUnico {
 
-    String message() default "{io.github.monthalcantara.nossobancodigital.validation.annotations.UnicoEmail}";
+    String message() default "Email já consta cadastrado no sistema";
     Class<?>[] groups() default { };
     Class<? extends Payload>[] payload() default { };
 }
