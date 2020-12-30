@@ -31,3 +31,6 @@ No texto, queremos que você aborde os pontos:
 Os itens acima são obrigatórios, mas não se limite. Se quiser escrever mais, fique à vontade (Não existe quantidade máxima de páginas ou caracteres).
 
 **Item bônus:**  Se ficou fácil, considere que você também precisa explicar como faria para proteger a aplicação de e-mail e CPF duplicados.
+
+## Post Blog
+Artigo utilizado no desafio está disponível em: https://www.notion.so/Apresenta-o-311b9333591941309f9c82ea40406eb7
